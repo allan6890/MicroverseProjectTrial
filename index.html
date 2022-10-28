@@ -10,15 +10,34 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id = "survey-form">
-        <label for="name">Name</label><br>
+        <label for="name" id="name-label">Name</label><br>
         <input type="text" id = "name" placeholder="Enter your name" required><br>
 
-        <label for="email">Email</label><br>
+        <label for="email" id="email-label">Email</label><br>
         <input type="email" id = "email" placeholder="Enter your email" required><br>
 
-        <label for="number">Age</label><br>
-        <input type="number" id = "number" placeholder="Enter your age" required><br>
+        <label for="number" id="number-label">Age(Optional)</label><br>
+        <input type="number" id = "number" placeholder="Enter your age" min="1" max="100" required><br>
 
+        <label for="dropdown">Which option best describes your current role?</label><br>
+        <select id="dropdown" name=""dropdown>
+            <option value="" disabled selected>select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full time Job">Full time Job</option>
+            <option value="Full time Leaner">Full time Leaner</option>
+            <option value="Pefer no to say">Prefer no to say</option>
+        </select><br>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+
+        <input type="radio" name="radionbtn" id="radio1" value="Definitely">
+        <label for="radio1"> Definitely</label><br>
+
+        <input type="radio" name="radionbtn" id="radio2" value="maybe">
+        <label for="radio2"> May be</label><br>
+
+        <input type="radio" name="radionbtn" id="radio3" value="notsure">
+        <label for="radio3"> Not sure</label><br>
     </form>
 </body>
 </html>
